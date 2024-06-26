@@ -26,6 +26,60 @@ header {
   text-align: center;
   padding-top: 10px;
 }
+body {
+  height: 2000px; /* Just for demonstration, so you can scroll */
+}
+
+.download-cv {
+font-size: 20px; /* Increase font size */
+color: #ffffff; /* White text */
+background-color: #007bff; /* Bright blue background */
+padding: 10px 20px; /* Padding to make it look like a button */
+border-radius: 5px; /* Rounded corners */
+border: 2px solid #0056b3; /* Dark blue border */
+text-decoration: none; /* Remove underline */
+font-weight: bold; /* Bold font */
+display: inline-block; /* Necessary for padding and margin to work */
+margin: 10px 0; /* Add some margin above and below */
+transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+position: fixed; /* Position the button */
+bottom: 50px; /* Distance from the bottom */
+right: 0; /* Distance from the right */
+}
+
+.download-cv:hover {
+background-color: #0056b3; /* Change background color on hover */
+color: #ffffff; /* Ensure text color stays white on hover */
+}
+
+
+header nav a {
+  margin: 30px 30px 30px 30px;
+  color: var(--color);
+  font-size: small;
+  margin-top: 50px;
+}
+
+
+body {
+  height: 2000px; /* Just for demonstration, so you can scroll */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+
+.cv {
+  position: relative; /* Add this line */
+}
+
+
+
+.download-cv:hover {
+background-color: #0056b3; /* Change background color on hover */
+color: #ffffff; /* Ensure text color stays white on hover */
+}
+
+
 .download-cv {
   font-size: 20px; /* Increase font size */
   color: #ffffff; /* White text */
@@ -38,39 +92,40 @@ header {
   display: inline-block; /* Necessary for padding and margin to work */
   margin: 10px 0; /* Add some margin above and below */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-  position: absolute; /* Position the button */
-  bottom: 50px; /* Distance from the bottom */
-  right: 320px; /* Distance from the right */
+  position: absolute; /* Changed from fixed to absolute */
+  bottom: 20px; /* Distance from the bottom of the .cv container */
+  right: 35%; /* Distance from the right of the .cv container */
 }
 
-.download-cv:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  color: #ffffff; /* Keep text white */
-  border-color: #007bff; /* Lighter blue border */
+.item {
+  color: white; /* Set text color for all text inside .item */
 }
 
-header nav a {
-  margin: 30px 30px 30px 30px;
-  color: var(--color);
-  font-size: small;
-  margin-top: 50px;
+.item a {
+  color: white; /* Set text color for links inside .item */
+  text-decoration: none; /* Remove underline from links */
 }
 
-.download-cv {
-  display: inline-block;
-  background-color: #007bff; /* Example button color */
-  color: white; /* Text color */
-  padding: 10px 20px; /* Button padding */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underline from link */
-  margin-top: 20px; /* Space above the link */
-  font-weight: bold; /* Make the text bold */
+.item a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
 }
 
-.download-cv:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add a shadow effect on hover */
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .tab {
   width: 100%;
@@ -182,6 +237,7 @@ div.list {
   height: 50px;
   width: 50px;
   align-items: center;
+  margin-top: 220px;
 }
 
 /* skills */
@@ -427,6 +483,11 @@ p {
   display: inline-block;
   margin: 10px 30px;
 }
+
+ .nav{
+  font-size: 20px;
+  background-color: red;
+ }
 
 
 @media screen and (max-width: 991px){
